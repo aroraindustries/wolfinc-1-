@@ -18,16 +18,14 @@ performSegue(withIdentifier: "hometofirsttimesegue", sender: "it works")
         performSegue(withIdentifier: "hometosecondvisitsegue", sender: "Future Hendrix")
         print("button2works")
     }
+    @IBOutlet weak var backgroundgif: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        backgroundgif.loadGif(name: "wolfincbackground")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

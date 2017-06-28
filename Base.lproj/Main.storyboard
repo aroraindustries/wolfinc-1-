@@ -22,50 +22,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-yI-ZXB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphy-downsized-large" translatesAutoresizingMaskIntoConstraints="NO" id="HQc-SE-9MB">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-yI-ZXB">
                                 <rect key="frame" x="53" y="379" width="268" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="Ibg-Cf-ZIT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <state key="normal" title="Visited Before"/>
+                                <state key="normal" title="Visited Before">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="secondtimebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBJ-6W-hTv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-87-y2j">
-                                <rect key="frame" x="45" y="111" width="82" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey There Future Billionare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJo-ml-tja">
-                                <rect key="frame" x="84" y="28" width="207" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hx-7c-Vqm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hx-7c-Vqm">
                                 <rect key="frame" x="85" y="92" width="205" height="310"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <state key="normal" title="Begginer"/>
+                                <state key="normal" title="Begginer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startupbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXP-G3-rnF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey There, are you a !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-Ir-xE7">
+                                <rect key="frame" x="103" y="92" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQc-SE-9MB" firstAttribute="centerX" secondItem="h1T-yI-ZXB" secondAttribute="centerX" id="0B5-6L-IXp"/>
+                            <constraint firstItem="9Hx-7c-Vqm" firstAttribute="centerX" secondItem="HQc-SE-9MB" secondAttribute="centerX" id="479-dB-F0d"/>
+                            <constraint firstItem="9Hx-7c-Vqm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="EVv-be-lIX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Hx-7c-Vqm" secondAttribute="bottom" constant="265" id="IJD-DL-vlo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HQc-SE-9MB" secondAttribute="bottom" id="L9y-9v-Yb2"/>
+                            <constraint firstItem="HQc-SE-9MB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mjc-xZ-eOA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h1T-yI-ZXB" secondAttribute="bottom" constant="193" id="NEE-SK-BP7"/>
+                            <constraint firstItem="9Hx-7c-Vqm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="XV8-yw-t3S"/>
+                            <constraint firstAttribute="trailing" secondItem="HQc-SE-9MB" secondAttribute="trailing" id="lhV-G5-Nnz"/>
+                            <constraint firstItem="HQc-SE-9MB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zHO-WW-78u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Iy-nv-W6X"/>
                     <connections>
+                        <outlet property="backgroundgif" destination="HQc-SE-9MB" id="uUn-N9-Add"/>
                         <segue destination="YTq-lg-4mp" kind="show" identifier="hometofirsttimesegue" id="FsN-n3-on9"/>
                         <segue destination="Wrm-Am-MWI" kind="show" identifier="hometosecondvisitsegue" id="gu9-Dg-XCa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.79999999999995" y="-528.48575712143929"/>
+            <point key="canvasLocation" x="756" y="-462"/>
         </scene>
         <!--Second Visit View Controller-->
         <scene sceneID="9DU-G1-jqQ">
@@ -1484,12 +1498,15 @@
             <point key="canvasLocation" x="-314.39999999999998" y="-528.48575712143929"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="giphy-downsized-large" width="640" height="360"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Jgn-mW-wba"/>
         <segue reference="FsN-n3-on9"/>
         <segue reference="lcD-qG-VzU"/>
+        <segue reference="833-hJ-mIr"/>
         <segue reference="5JZ-5Q-1an"/>
-        <segue reference="umB-D5-eZ8"/>
         <segue reference="NBs-TX-t1d"/>
         <segue reference="Abc-Wo-3Qc"/>
         <segue reference="Zdi-uu-015"/>
