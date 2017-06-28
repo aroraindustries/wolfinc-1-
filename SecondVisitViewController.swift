@@ -27,16 +27,19 @@ class SecondVisitViewController: UIViewController {
         performSegue(withIdentifier: "correctsecondvisittoperatiosegue", sender: ":P")
     }
     @IBAction func secondvisittodebttoequityratiobutton(_ sender: Any) {
+        performSegue(withIdentifier: "secondvisittodebtequityratiosegue", sender: "")
     }
     @IBAction func secondvisittocurrentratiobutton(_ sender: Any) {
     }
     @IBAction func secondvisittodividendpayoutratio(_ sender: Any) {
+        performSegue(withIdentifier: "secondvisittodividendpayoutsegue", sender: "")
     }
     @IBAction func secondvisittopricetobookratio(_ sender: Any) {
     }
     @IBAction func secondvisittostockcalculatorbutton(_ sender: Any) {
     }
     @IBAction func secondvisittogametimebutton(_ sender: Any) {
+        performSegue(withIdentifier: "secondvisittogametimesegue", sender: "")
     }
     
     override func viewDidLoad() {

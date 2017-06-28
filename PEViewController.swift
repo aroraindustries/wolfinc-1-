@@ -23,6 +23,12 @@ class PEViewController: UIViewController, UITextFieldDelegate {
      answerlabel.text = "\(peratio)"
     }
 
+    @IBAction func petodebttoequityratiobutton(_ sender: Any) {
+        performSegue(withIdentifier: "petodebttoequitysegue", sender: "")
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
